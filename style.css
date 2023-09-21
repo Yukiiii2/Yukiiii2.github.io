@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    min-height: 100vh;
+    background: ;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 32px;
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: blueviolet;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.header{
+    background-color: black;
+  }
+
+  ul{
+    list-style: none;
+  }
+  ul li{
+    display: inline-block;
+    position: relative;
+  }
+  ul li a{
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
+  ul li ul.dropdown li{
+    display: block;
+
+  }
+  ul li ul.dropdown{
+     width: 100%;
+     position:absolute;
+     z-index: 999;
+     display: none;
+     background: black;
+     border-color: black;
+     text-align: justify;
+  }
+  ul li a :hover{
+    background: black;
+  }
+  ul li:hover ul.dropdown{
+    display: block;
+  }
